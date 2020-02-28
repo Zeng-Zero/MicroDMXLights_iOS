@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB52408478500B3EEDF /* AppDelegate.swift */; };
+		95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB72408478500B3EEDF /* SceneDelegate.swift */; };
+		95565CBF2408478700B3EEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95565CBE2408478700B3EEDF /* Assets.xcassets */; };
+		95565CC22408478700B3EEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95565CC02408478700B3EEDF /* LaunchScreen.storyboard */; };
+		95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CC9240847F800B3EEDF /* CustomButton.swift */; };
+		95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCB2408480D00B3EEDF /* ViewController.swift */; };
+		95565CCE2408481100B3EEDF /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCD2408481100B3EEDF /* MQTT.swift */; };
+		95565CD02408482600B3EEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95565CCF2408482600B3EEDF /* Main.storyboard */; };
+		95565CD72408F80300B3EEDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CD62408F80300B3EEDF /* Starscream.framework */; };
+		95565CD82408F80300B3EEDF /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CD62408F80300B3EEDF /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95565CDB2408F80600B3EEDF /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */; };
+		95565CDC2408F80600B3EEDF /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95565CDE2408F81300B3EEDF /* CocoaMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */; };
+		95565CDF2408F81300B3EEDF /* CocoaMQTT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95565CD92408F80300B3EEDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95565CDC2408F80600B3EEDF /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				95565CD82408F80300B3EEDF /* Starscream.framework in Embed Frameworks */,
+				95565CDF2408F81300B3EEDF /* CocoaMQTT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		95565CB22408478500B3EEDF /* MicroDMXLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroDMXLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95565CB52408478500B3EEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95565CB72408478500B3EEDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95565CBE2408478700B3EEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95565CC12408478700B3EEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95565CC9240847F800B3EEDF /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		95565CCB2408480D00B3EEDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95565CCD2408481100B3EEDF /* MQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
+		95565CCF2408482600B3EEDF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		95565CD3240848B400B3EEDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95565CD62408F80300B3EEDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaMQTT.framework; path = Carthage/Build/iOS/CocoaMQTT.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95565CAF2408478500B3EEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95565CDB2408F80600B3EEDF /* CocoaAsyncSocket.framework in Frameworks */,
+				95565CD72408F80300B3EEDF /* Starscream.framework in Frameworks */,
+				95565CDE2408F81300B3EEDF /* CocoaMQTT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95565CA92408478500B3EEDF = {
+			isa = PBXGroup;
+			children = (
+				95565CB42408478500B3EEDF /* MicroDMXLights */,
+				95565CB32408478500B3EEDF /* Products */,
+				95565CD52408F80300B3EEDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95565CB32408478500B3EEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95565CB22408478500B3EEDF /* MicroDMXLights.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95565CB42408478500B3EEDF /* MicroDMXLights */ = {
+			isa = PBXGroup;
+			children = (
+				95565CCD2408481100B3EEDF /* MQTT.swift */,
+				95565CCB2408480D00B3EEDF /* ViewController.swift */,
+				95565CC9240847F800B3EEDF /* CustomButton.swift */,
+				95565CB52408478500B3EEDF /* AppDelegate.swift */,
+				95565CB72408478500B3EEDF /* SceneDelegate.swift */,
+				95565CCF2408482600B3EEDF /* Main.storyboard */,
+				95565CBE2408478700B3EEDF /* Assets.xcassets */,
+				95565CC02408478700B3EEDF /* LaunchScreen.storyboard */,
+				95565CD3240848B400B3EEDF /* Info.plist */,
+			);
+			path = MicroDMXLights;
+			sourceTree = "<group>";
+		};
+		95565CD52408F80300B3EEDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */,
+				95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */,
+				95565CD62408F80300B3EEDF /* Starscream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95565CB12408478500B3EEDF /* MicroDMXLights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95565CC62408478700B3EEDF /* Build configuration list for PBXNativeTarget "MicroDMXLights" */;
+			buildPhases = (
+				95565CAE2408478500B3EEDF /* Sources */,
+				95565CAF2408478500B3EEDF /* Frameworks */,
+				95565CB02408478500B3EEDF /* Resources */,
+				95565CD92408F80300B3EEDF /* Embed Frameworks */,
+				9594597F2408F8C7009151BE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicroDMXLights;
+			productName = MicroDMXLights;
+			productReference = 95565CB22408478500B3EEDF /* MicroDMXLights.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95565CAA2408478500B3EEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = adrian.szymanowski;
+				TargetAttributes = {
+					95565CB12408478500B3EEDF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 95565CAD2408478500B3EEDF /* Build configuration list for PBXProject "MicroDMXLights" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95565CA92408478500B3EEDF;
+			productRefGroup = 95565CB32408478500B3EEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95565CB12408478500B3EEDF /* MicroDMXLights */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95565CB02408478500B3EEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95565CC22408478700B3EEDF /* LaunchScreen.storyboard in Resources */,
+				95565CBF2408478700B3EEDF /* Assets.xcassets in Resources */,
+				95565CD02408482600B3EEDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9594597F2408F8C7009151BE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaMQTT.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95565CAE2408478500B3EEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */,
+				95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */,
+				95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */,
+				95565CCE2408481100B3EEDF /* MQTT.swift in Sources */,
+				95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95565CC02408478700B3EEDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95565CC12408478700B3EEDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95565CC42408478700B3EEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95565CC52408478700B3EEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95565CC72408478700B3EEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHULAJL778;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MicroDMXLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.adrimi.MicroDMXLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95565CC82408478700B3EEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHULAJL778;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MicroDMXLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.adrimi.MicroDMXLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95565CAD2408478500B3EEDF /* Build configuration list for PBXProject "MicroDMXLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95565CC42408478700B3EEDF /* Debug */,
+				95565CC52408478700B3EEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95565CC62408478700B3EEDF /* Build configuration list for PBXNativeTarget "MicroDMXLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95565CC72408478700B3EEDF /* Debug */,
+				95565CC82408478700B3EEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95565CAA2408478500B3EEDF /* Project object */;
+}

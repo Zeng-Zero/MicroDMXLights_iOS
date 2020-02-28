@@ -23,10 +23,10 @@ class MQTT {
     weak var delegate: MQTTDelegate?
     
     
-    init(id: String, host: String = "localhost", port: Int = 1883) {
+    init(id: String, host: String = "localhost", port: UInt16 = 1883) {
         instance = CocoaMQTT.init(clientID: id,
                                   host: host,
-                                  port: UInt16(port))
+                                  port: port)
     }
     
     func configure(username: String? = nil, password: String? = nil, topic: String) {
@@ -51,9 +51,29 @@ class MQTT {
         instance.disconnect()
     }
     
+    func interfaceNames() -> [String] {
+        let MAX_INTERFACES = 128;
+        
+        var interfaceNames = [String]()
+        let interfaceNamePtr = UnsafeMutablePointer<Int8>.allocate(capacity: Int(Int(IF_NAMESIZE)))
+        for interfaceIndex in 1...MAX_INTERFACES {
+            if (if_indextoname(UInt32(interfaceIndex), interfaceNamePtr) != nil){
+                let interfaceName = String(cString: interfaceNamePtr)
+                interfaceNames.append(interfaceName)
+            } else {
+                break
+            }
+        }
+        
+        interfaceNamePtr.deallocate()
+        return interfaceNames
+    }
+    
 }
 
 extension MQTT: CocoaMQTTDelegate {
+
+    
     
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
         isConnected = true
@@ -74,11 +94,11 @@ extension MQTT: CocoaMQTTDelegate {
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopics success: NSDictionary, failed: [String]) {
-        print("didSubscribeTopics")
+            print("didSubscribeTopics")
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didUnsubscribeTopics topics: [String]) {
-        print("didUnsubscribeTopics")
+           print("didUnsubscribeTopics")
     }
     
     func mqttDidPing(_ mqtt: CocoaMQTT) {

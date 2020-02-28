@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MIcroDMXLights
+//  MicroDMXLights
 //
-//  Created by adrian.szymanowski on 13/01/2020.
+//  Created by adrian.szymanowski on 27/02/2020.
 //  Copyright © 2020 adrian.szymanowski. All rights reserved.
 //
 

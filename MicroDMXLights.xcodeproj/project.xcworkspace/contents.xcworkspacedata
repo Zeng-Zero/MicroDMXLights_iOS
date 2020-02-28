@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MIcroDMXLights.xcodeproj">
+      location = "self:MicroDMXLights.xcodeproj">
    </FileRef>
 </Workspace>

@@ -40,6 +40,14 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            print(self.service.interfaceNames())
+        }
+    }
+    
 }
 
 extension ViewController: MQTTDelegate {
