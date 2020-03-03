@@ -1,0 +1,6 @@
+framework module Pods_MicroDMXLights {
+  umbrella header "Pods-MicroDMXLights-umbrella.h"
+
+  export *
+  module * { export * }
+}

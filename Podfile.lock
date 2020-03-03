@@ -1,0 +1,24 @@
+PODS:
+  - CocoaAsyncSocket (7.6.4)
+  - CocoaMQTT (1.2.5):
+    - CocoaAsyncSocket (~> 7.6.3)
+  - FGRoute (1.0.5)
+
+DEPENDENCIES:
+  - CocoaMQTT
+  - FGRoute
+
+SPEC REPOS:
+  trunk:
+    - CocoaAsyncSocket
+    - CocoaMQTT
+    - FGRoute
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  CocoaMQTT: a61490ed3b328011c5d75169a77781983e2bb221
+  FGRoute: 012077ebabb2841d2af3baf63b30e72841f35ba1
+
+PODFILE CHECKSUM: e0eba65938bcbdc7ef2e165bee622e07424c60f0
+
+COCOAPODS: 1.8.4

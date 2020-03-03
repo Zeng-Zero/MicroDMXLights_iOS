@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64F10DB99674995E0ACFDA68 /* Pods_MicroDMXLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */; };
+		9550D20924095FA00000BCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9550D20724095FA00000BCEB /* Main.storyboard */; };
 		95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB52408478500B3EEDF /* AppDelegate.swift */; };
 		95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB72408478500B3EEDF /* SceneDelegate.swift */; };
 		95565CBF2408478700B3EEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95565CBE2408478700B3EEDF /* Assets.xcassets */; };
@@ -14,32 +16,15 @@
 		95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CC9240847F800B3EEDF /* CustomButton.swift */; };
 		95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCB2408480D00B3EEDF /* ViewController.swift */; };
 		95565CCE2408481100B3EEDF /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCD2408481100B3EEDF /* MQTT.swift */; };
-		95565CD02408482600B3EEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95565CCF2408482600B3EEDF /* Main.storyboard */; };
-		95565CD72408F80300B3EEDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CD62408F80300B3EEDF /* Starscream.framework */; };
-		95565CD82408F80300B3EEDF /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CD62408F80300B3EEDF /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		95565CDB2408F80600B3EEDF /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */; };
-		95565CDC2408F80600B3EEDF /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		95565CDE2408F81300B3EEDF /* CocoaMQTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */; };
-		95565CDF2408F81300B3EEDF /* CocoaMQTT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95B809A9240AA84300BD4006 /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809A8240AA84300BD4006 /* RGBSlider.swift */; };
+		95B809AB240AAAAE00BD4006 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809AA240AAAAE00BD4006 /* PreviewView.swift */; };
+		95E6B3D4240AB413002EF674 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		95565CD92408F80300B3EEDF /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				95565CDC2408F80600B3EEDF /* CocoaAsyncSocket.framework in Embed Frameworks */,
-				95565CD82408F80300B3EEDF /* Starscream.framework in Embed Frameworks */,
-				95565CDF2408F81300B3EEDF /* CocoaMQTT.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		17647C8B9AFD1B5BF0675BE0 /* Pods-MicroDMXLights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroDMXLights.release.xcconfig"; path = "Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights.release.xcconfig"; sourceTree = "<group>"; };
+		7DE21EB1FB01B688C46F125C /* Pods-MicroDMXLights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroDMXLights.debug.xcconfig"; path = "Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights.debug.xcconfig"; sourceTree = "<group>"; };
+		9550D20824095FA00000BCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95565CB22408478500B3EEDF /* MicroDMXLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroDMXLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95565CB52408478500B3EEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95565CB72408478500B3EEDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,11 +33,14 @@
 		95565CC9240847F800B3EEDF /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		95565CCB2408480D00B3EEDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95565CCD2408481100B3EEDF /* MQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
-		95565CCF2408482600B3EEDF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		95565CD3240848B400B3EEDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95565CD62408F80300B3EEDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaMQTT.framework; path = Carthage/Build/iOS/CocoaMQTT.framework; sourceTree = "<group>"; };
+		95B809A8240AA84300BD4006 /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
+		95B809AA240AAAAE00BD4006 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroDMXLights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,21 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95565CDB2408F80600B3EEDF /* CocoaAsyncSocket.framework in Frameworks */,
-				95565CD72408F80300B3EEDF /* Starscream.framework in Frameworks */,
-				95565CDE2408F81300B3EEDF /* CocoaMQTT.framework in Frameworks */,
+				64F10DB99674995E0ACFDA68 /* Pods_MicroDMXLights.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0025B7D64AFE88AA9AEC4A3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DE21EB1FB01B688C46F125C /* Pods-MicroDMXLights.debug.xcconfig */,
+				17647C8B9AFD1B5BF0675BE0 /* Pods-MicroDMXLights.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95565CA92408478500B3EEDF = {
 			isa = PBXGroup;
 			children = (
 				95565CB42408478500B3EEDF /* MicroDMXLights */,
 				95565CB32408478500B3EEDF /* Products */,
 				95565CD52408F80300B3EEDF /* Frameworks */,
+				0025B7D64AFE88AA9AEC4A3B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,15 +85,15 @@
 		95565CB42408478500B3EEDF /* MicroDMXLights */ = {
 			isa = PBXGroup;
 			children = (
-				95565CCD2408481100B3EEDF /* MQTT.swift */,
-				95565CCB2408480D00B3EEDF /* ViewController.swift */,
-				95565CC9240847F800B3EEDF /* CustomButton.swift */,
+				95565CD3240848B400B3EEDF /* Info.plist */,
 				95565CB52408478500B3EEDF /* AppDelegate.swift */,
 				95565CB72408478500B3EEDF /* SceneDelegate.swift */,
-				95565CCF2408482600B3EEDF /* Main.storyboard */,
 				95565CBE2408478700B3EEDF /* Assets.xcassets */,
 				95565CC02408478700B3EEDF /* LaunchScreen.storyboard */,
-				95565CD3240848B400B3EEDF /* Info.plist */,
+				9550D20724095FA00000BCEB /* Main.storyboard */,
+				95B809A1240AA20C00BD4006 /* Common */,
+				95B809A0240AA1F300BD4006 /* Service */,
+				95B8099B240AA1C800BD4006 /* UI */,
 			);
 			path = MicroDMXLights;
 			sourceTree = "<group>";
@@ -108,8 +104,92 @@
 				95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */,
 				95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */,
 				95565CD62408F80300B3EEDF /* Starscream.framework */,
+				9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95B8099B240AA1C800BD4006 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				95B8099F240AA1E600BD4006 /* Views */,
+				95B8099D240AA1D700BD4006 /* ViewControllers */,
+				95B8099E240AA1E000BD4006 /* ViewModels */,
+				95B8099C240AA1D000BD4006 /* Models */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		95B8099C240AA1D000BD4006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95B8099D240AA1D700BD4006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95565CCB2408480D00B3EEDF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95B8099E240AA1E000BD4006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		95B8099F240AA1E600BD4006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95B809AA240AAAAE00BD4006 /* PreviewView.swift */,
+				95565CC9240847F800B3EEDF /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95B809A0240AA1F300BD4006 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				95565CCD2408481100B3EEDF /* MQTT.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		95B809A1240AA20C00BD4006 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				95B809A4240AA30400BD4006 /* Components */,
+				95B809A3240AA2FF00BD4006 /* Extensions */,
+				95B809A2240AA2FA00BD4006 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		95B809A2240AA2FA00BD4006 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		95B809A3240AA2FF00BD4006 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95B809A4240AA30400BD4006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95B809A8240AA84300BD4006 /* RGBSlider.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,11 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95565CC62408478700B3EEDF /* Build configuration list for PBXNativeTarget "MicroDMXLights" */;
 			buildPhases = (
+				FFC7F47F9500845D7F135B31 /* [CP] Check Pods Manifest.lock */,
 				95565CAE2408478500B3EEDF /* Sources */,
 				95565CAF2408478500B3EEDF /* Frameworks */,
 				95565CB02408478500B3EEDF /* Resources */,
-				95565CD92408F80300B3EEDF /* Embed Frameworks */,
-				9594597F2408F8C7009151BE /* ShellScript */,
+				CABE8935C7E72464BD9AC029 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,16 +252,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9550D20924095FA00000BCEB /* Main.storyboard in Resources */,
 				95565CC22408478700B3EEDF /* LaunchScreen.storyboard in Resources */,
 				95565CBF2408478700B3EEDF /* Assets.xcassets in Resources */,
-				95565CD02408482600B3EEDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9594597F2408F8C7009151BE /* ShellScript */ = {
+		CABE8935C7E72464BD9AC029 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC7F47F9500845D7F135B31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,17 +286,19 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaMQTT.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicroDMXLights-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -208,17 +307,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B809A9240AA84300BD4006 /* RGBSlider.swift in Sources */,
 				95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */,
+				95B809AB240AAAAE00BD4006 /* PreviewView.swift in Sources */,
 				95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */,
 				95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */,
 				95565CCE2408481100B3EEDF /* MQTT.swift in Sources */,
 				95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */,
+				95E6B3D4240AB413002EF674 /* UIColor+RGB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9550D20724095FA00000BCEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9550D20824095FA00000BCEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		95565CC02408478700B3EEDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,6 +456,7 @@
 		};
 		95565CC72408478700B3EEDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE21EB1FB01B688C46F125C /* Pods-MicroDMXLights.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,12 +473,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.adrimi.MicroDMXLights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		95565CC82408478700B3EEDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17647C8B9AFD1B5BF0675BE0 /* Pods-MicroDMXLights.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.adrimi.MicroDMXLights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
