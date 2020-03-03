@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64F10DB99674995E0ACFDA68 /* Pods_MicroDMXLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */; };
+		9550D20924095FA00000BCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9550D20724095FA00000BCEB /* Main.storyboard */; };
+		95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB52408478500B3EEDF /* AppDelegate.swift */; };
+		95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB72408478500B3EEDF /* SceneDelegate.swift */; };
+		95565CBF2408478700B3EEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95565CBE2408478700B3EEDF /* Assets.xcassets */; };
+		95565CC22408478700B3EEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95565CC02408478700B3EEDF /* LaunchScreen.storyboard */; };
+		95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CC9240847F800B3EEDF /* CustomButton.swift */; };
+		95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCB2408480D00B3EEDF /* ViewController.swift */; };
+		95565CCE2408481100B3EEDF /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCD2408481100B3EEDF /* MQTT.swift */; };
+		95B809A9240AA84300BD4006 /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809A8240AA84300BD4006 /* RGBSlider.swift */; };
+		95B809AB240AAAAE00BD4006 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809AA240AAAAE00BD4006 /* PreviewView.swift */; };
+		95E6B3D4240AB413002EF674 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17647C8B9AFD1B5BF0675BE0 /* Pods-MicroDMXLights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroDMXLights.release.xcconfig"; path = "Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights.release.xcconfig"; sourceTree = "<group>"; };
+		7DE21EB1FB01B688C46F125C /* Pods-MicroDMXLights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroDMXLights.debug.xcconfig"; path = "Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights.debug.xcconfig"; sourceTree = "<group>"; };
+		9550D20824095FA00000BCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95565CB22408478500B3EEDF /* MicroDMXLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroDMXLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95565CB52408478500B3EEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95565CB72408478500B3EEDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95565CBE2408478700B3EEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95565CC12408478700B3EEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95565CC9240847F800B3EEDF /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		95565CCB2408480D00B3EEDF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95565CCD2408481100B3EEDF /* MQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
+		95565CD3240848B400B3EEDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95565CD62408F80300B3EEDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaMQTT.framework; path = Carthage/Build/iOS/CocoaMQTT.framework; sourceTree = "<group>"; };
+		95B809A8240AA84300BD4006 /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
+		95B809AA240AAAAE00BD4006 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroDMXLights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95565CAF2408478500B3EEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F10DB99674995E0ACFDA68 /* Pods_MicroDMXLights.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0025B7D64AFE88AA9AEC4A3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DE21EB1FB01B688C46F125C /* Pods-MicroDMXLights.debug.xcconfig */,
+				17647C8B9AFD1B5BF0675BE0 /* Pods-MicroDMXLights.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95565CA92408478500B3EEDF = {
+			isa = PBXGroup;
+			children = (
+				95565CB42408478500B3EEDF /* MicroDMXLights */,
+				95565CB32408478500B3EEDF /* Products */,
+				95565CD52408F80300B3EEDF /* Frameworks */,
+				0025B7D64AFE88AA9AEC4A3B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		95565CB32408478500B3EEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95565CB22408478500B3EEDF /* MicroDMXLights.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95565CB42408478500B3EEDF /* MicroDMXLights */ = {
+			isa = PBXGroup;
+			children = (
+				95565CD3240848B400B3EEDF /* Info.plist */,
+				95565CB52408478500B3EEDF /* AppDelegate.swift */,
+				95565CB72408478500B3EEDF /* SceneDelegate.swift */,
+				95565CBE2408478700B3EEDF /* Assets.xcassets */,
+				95565CC02408478700B3EEDF /* LaunchScreen.storyboard */,
+				9550D20724095FA00000BCEB /* Main.storyboard */,
+				95B809A1240AA20C00BD4006 /* Common */,
+				95B809A0240AA1F300BD4006 /* Service */,
+				95B8099B240AA1C800BD4006 /* UI */,
+			);
+			path = MicroDMXLights;
+			sourceTree = "<group>";
+		};
+		95565CD52408F80300B3EEDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */,
+				95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */,
+				95565CD62408F80300B3EEDF /* Starscream.framework */,
+				9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95B8099B240AA1C800BD4006 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				95B8099F240AA1E600BD4006 /* Views */,
+				95B8099D240AA1D700BD4006 /* ViewControllers */,
+				95B8099E240AA1E000BD4006 /* ViewModels */,
+				95B8099C240AA1D000BD4006 /* Models */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		95B8099C240AA1D000BD4006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95B8099D240AA1D700BD4006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				95565CCB2408480D00B3EEDF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		95B8099E240AA1E000BD4006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		95B8099F240AA1E600BD4006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95B809AA240AAAAE00BD4006 /* PreviewView.swift */,
+				95565CC9240847F800B3EEDF /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95B809A0240AA1F300BD4006 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				95565CCD2408481100B3EEDF /* MQTT.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		95B809A1240AA20C00BD4006 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				95B809A4240AA30400BD4006 /* Components */,
+				95B809A3240AA2FF00BD4006 /* Extensions */,
+				95B809A2240AA2FA00BD4006 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		95B809A2240AA2FA00BD4006 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		95B809A3240AA2FF00BD4006 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95B809A4240AA30400BD4006 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95B809A8240AA84300BD4006 /* RGBSlider.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95565CB12408478500B3EEDF /* MicroDMXLights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95565CC62408478700B3EEDF /* Build configuration list for PBXNativeTarget "MicroDMXLights" */;
+			buildPhases = (
+				FFC7F47F9500845D7F135B31 /* [CP] Check Pods Manifest.lock */,
+				95565CAE2408478500B3EEDF /* Sources */,
+				95565CAF2408478500B3EEDF /* Frameworks */,
+				95565CB02408478500B3EEDF /* Resources */,
+				CABE8935C7E72464BD9AC029 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicroDMXLights;
+			productName = MicroDMXLights;
+			productReference = 95565CB22408478500B3EEDF /* MicroDMXLights.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95565CAA2408478500B3EEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = adrian.szymanowski;
+				TargetAttributes = {
+					95565CB12408478500B3EEDF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 95565CAD2408478500B3EEDF /* Build configuration list for PBXProject "MicroDMXLights" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95565CA92408478500B3EEDF;
+			productRefGroup = 95565CB32408478500B3EEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95565CB12408478500B3EEDF /* MicroDMXLights */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95565CB02408478500B3EEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9550D20924095FA00000BCEB /* Main.storyboard in Resources */,
+				95565CC22408478700B3EEDF /* LaunchScreen.storyboard in Resources */,
+				95565CBF2408478700B3EEDF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CABE8935C7E72464BD9AC029 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC7F47F9500845D7F135B31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicroDMXLights-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95565CAE2408478500B3EEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B809A9240AA84300BD4006 /* RGBSlider.swift in Sources */,
+				95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */,
+				95B809AB240AAAAE00BD4006 /* PreviewView.swift in Sources */,
+				95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */,
+				95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */,
+				95565CCE2408481100B3EEDF /* MQTT.swift in Sources */,
+				95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */,
+				95E6B3D4240AB413002EF674 /* UIColor+RGB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9550D20724095FA00000BCEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9550D20824095FA00000BCEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95565CC02408478700B3EEDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95565CC12408478700B3EEDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95565CC42408478700B3EEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95565CC52408478700B3EEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95565CC72408478700B3EEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE21EB1FB01B688C46F125C /* Pods-MicroDMXLights.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHULAJL778;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MicroDMXLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.adrimi.MicroDMXLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		95565CC82408478700B3EEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17647C8B9AFD1B5BF0675BE0 /* Pods-MicroDMXLights.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHULAJL778;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MicroDMXLights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.adrimi.MicroDMXLights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95565CAD2408478500B3EEDF /* Build configuration list for PBXProject "MicroDMXLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95565CC42408478700B3EEDF /* Debug */,
+				95565CC52408478700B3EEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95565CC62408478700B3EEDF /* Build configuration list for PBXNativeTarget "MicroDMXLights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95565CC72408478700B3EEDF /* Debug */,
+				95565CC82408478700B3EEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95565CAA2408478500B3EEDF /* Project object */;
+}
