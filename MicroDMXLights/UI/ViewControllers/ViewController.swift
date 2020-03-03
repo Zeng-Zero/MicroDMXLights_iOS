@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         service.delegate = self
-        service.configure(topic: "esp8266")
+        service.configure(topic: "esp/example/push")
     }
     
-    @IBAction func onSwitchButtonTapped(_ sender: UIButton) {
+    @IBAction func onSwitchButtonTapped(_ sender: CustomButton) {
         if service.isConnected {
             service.disconnect()
             connectButton.backgroundColor = .white
@@ -44,6 +44,20 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func onSendButtonTapped(_ sender: CustomButton) {
+        service.sendMessage(
+        """
+            {
+              "params": {
+                "r": 255,
+                "g": 2,
+                "b": 0,
+                "s": 10,
+                "t": 1
+              }
+            }
+            """)
+    }
     // MARK: Helper methods
     
 }
@@ -51,17 +65,12 @@ class ViewController: UIViewController {
 extension ViewController: MQTTDelegate {
     
     func mqtt(_ mqtt: MQTT, didConnect: Bool) {
-        UIView.animate(withDuration: 0.5) {
-            let color = UIColor.green.withAlphaComponent(0.2)
-            self.connectButton.backgroundColor = color
-        }
+        connectButton.backgroundColor = UIColor.green.withAlphaComponent(0.2)
         connectButton.setTitle("Disconnect", for: .normal)
     }
     
     func mqtt(_ mqtt: MQTT, didDisconnect: Bool) {
-        UIView.animate(withDuration: 0.5) {
-            self.connectButton.backgroundColor = .white
-        }
+        connectButton.backgroundColor = .white
         connectButton.setTitle("Connect", for: .normal)
     }
     

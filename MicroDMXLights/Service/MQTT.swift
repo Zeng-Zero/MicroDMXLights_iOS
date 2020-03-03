@@ -20,6 +20,7 @@ class MQTT {
     
     var instance: CocoaMQTT
     var isConnected: Bool = false
+    var topic: String = ""
     
     weak var delegate: MQTTDelegate?
     
@@ -36,7 +37,8 @@ class MQTT {
             instance.password = p
         }
         
-        instance.willMessage = CocoaMQTTWill.init(topic: topic, message: "dmx")
+//        instance.willMessage = CocoaMQTTWill.init(topic: topic, message: "example")
+        self.topic = topic
         instance.keepAlive = 60
         instance.delegate = self
     }
@@ -50,7 +52,8 @@ class MQTT {
     }
     
     func sendMessage(_ message: String) {
-        instance.publish(.init(topic: "/sample/localhost", string: message))
+        instance.publish(topic, withString: message)
+//        instance.publish(.init(topic: self.topic, string: message))
     }
  
 }
