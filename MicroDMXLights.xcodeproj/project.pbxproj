@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64F10DB99674995E0ACFDA68 /* Pods_MicroDMXLights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */; };
 		9550D20924095FA00000BCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9550D20724095FA00000BCEB /* Main.storyboard */; };
 		95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB52408478500B3EEDF /* AppDelegate.swift */; };
 		95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CB72408478500B3EEDF /* SceneDelegate.swift */; };
@@ -19,10 +18,12 @@
 		95B809A9240AA84300BD4006 /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809A8240AA84300BD4006 /* RGBSlider.swift */; };
 		95B809AB240AAAAE00BD4006 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809AA240AAAAE00BD4006 /* PreviewView.swift */; };
 		95E6B3D4240AB413002EF674 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */; };
+		99BC03C20CA571A84F7195C1 /* libPods-MicroDMXLights.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA2FB13871741073D009FA1 /* libPods-MicroDMXLights.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17647C8B9AFD1B5BF0675BE0 /* Pods-MicroDMXLights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroDMXLights.release.xcconfig"; path = "Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights.release.xcconfig"; sourceTree = "<group>"; };
+		5BA2FB13871741073D009FA1 /* libPods-MicroDMXLights.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MicroDMXLights.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE21EB1FB01B688C46F125C /* Pods-MicroDMXLights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicroDMXLights.debug.xcconfig"; path = "Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights.debug.xcconfig"; sourceTree = "<group>"; };
 		9550D20824095FA00000BCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95565CB22408478500B3EEDF /* MicroDMXLights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroDMXLights.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +41,6 @@
 		95B809A8240AA84300BD4006 /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
 		95B809AA240AAAAE00BD4006 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
-		9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroDMXLights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64F10DB99674995E0ACFDA68 /* Pods_MicroDMXLights.framework in Frameworks */,
+				99BC03C20CA571A84F7195C1 /* libPods-MicroDMXLights.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 				95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */,
 				95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */,
 				95565CD62408F80300B3EEDF /* Starscream.framework */,
-				9C6A1A92BD2B343FC2FE638D /* Pods_MicroDMXLights.framework */,
+				5BA2FB13871741073D009FA1 /* libPods-MicroDMXLights.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,7 +203,6 @@
 				95565CAE2408478500B3EEDF /* Sources */,
 				95565CAF2408478500B3EEDF /* Frameworks */,
 				95565CB02408478500B3EEDF /* Resources */,
-				CABE8935C7E72464BD9AC029 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,23 +260,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CABE8935C7E72464BD9AC029 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicroDMXLights/Pods-MicroDMXLights-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FFC7F47F9500845D7F135B31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

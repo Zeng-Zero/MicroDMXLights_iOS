@@ -53,7 +53,6 @@ class MQTT {
     
     func sendMessage(_ message: String) {
         instance.publish(topic, withString: message)
-//        instance.publish(.init(topic: self.topic, string: message))
     }
  
 }

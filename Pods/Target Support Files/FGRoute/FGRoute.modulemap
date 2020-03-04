@@ -1,4 +1,4 @@
-framework module FGRoute {
+module FGRoute {
   umbrella header "FGRoute-umbrella.h"
 
   export *
