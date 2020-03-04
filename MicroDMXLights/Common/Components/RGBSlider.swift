@@ -32,5 +32,5 @@ class RGBSlider: UISlider {
         maximumValue = 255
         value = maximumValue / 2
     }
-
+    
 }

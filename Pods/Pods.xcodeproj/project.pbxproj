@@ -81,24 +81,24 @@
 		57BA181FADDF18B70DA3BF13047B9FA4 /* CocoaMQTTLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTLogger.swift; path = Source/CocoaMQTTLogger.swift; sourceTree = "<group>"; };
 		5E816CE72713310A886148D62AE6C980 /* CocoaMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaMQTT-dummy.m"; sourceTree = "<group>"; };
 		67F7D8FBBB386D45A6046017322F740A /* FGRoute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FGRoute-dummy.m"; sourceTree = "<group>"; };
-		6CBEFE4F9E22AFDC6347A739BB35FF8C /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCocoaAsyncSocket.a; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD7CA199C761D30920D8179EC558C23 /* FGRoute.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FGRoute.modulemap; sourceTree = "<group>"; };
 		82960AE57954454CF725E95245AEEA8C /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
 		83229D52084D2E6E051E001BD1F54C37 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
 		882DC1140D345352EA8BC37953C34FA7 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		936C5FFF80772FCD8832CFF089F47B2D /* CocoaMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaMQTT.modulemap; sourceTree = "<group>"; };
 		9D7D0E64898EF377EF25DEA59D7B0354 /* FGRoute-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FGRoute-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ECB9587114ED54F8BC011CECA3579CD /* FGRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FGRoute.m; path = FGRoute/Classes/FGRoute.m; sourceTree = "<group>"; };
 		A04941D175B8B305332D5A5757B1DBD4 /* Pods-MicroDMXLights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MicroDMXLights.debug.xcconfig"; sourceTree = "<group>"; };
-		A462BB8075057AD2B266B8F6CD4BAD66 /* libFGRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFGRoute.a; path = libFGRoute.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A462BB8075057AD2B266B8F6CD4BAD66 /* libFGRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFGRoute.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD6E67C360FA937DDF0EBEC087F13C1 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
 		ACF6A582AC85ADEFB39F32C25CA2241F /* Pods-MicroDMXLights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MicroDMXLights.release.xcconfig"; sourceTree = "<group>"; };
 		B764C9D24F00C72DB99EEB613991BE76 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		B961FF1BA488267356A986E09B7DEF89 /* route.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = route.h; path = FGRoute/Classes/route.h; sourceTree = "<group>"; };
 		C2C2A92FE8A209ADE7E7E66CBEF2FE1B /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
 		C2CD4C9DC0C3FC6F19D24E7C002A5BAB /* CocoaMQTT.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaMQTT.xcconfig; sourceTree = "<group>"; };
-		C92E9C2C827FE20CC676B11E26CED81D /* libPods-MicroDMXLights.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MicroDMXLights.a"; path = "libPods-MicroDMXLights.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92E9C2C827FE20CC676B11E26CED81D /* libPods-MicroDMXLights.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MicroDMXLights.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA74605CBDFDBCCD312AD1BC5127704A /* FGRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FGRoute.h; path = FGRoute/Classes/FGRoute.h; sourceTree = "<group>"; };
 		CF836B2C362827F75A8C63A62EDE9711 /* Pods-MicroDMXLights-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MicroDMXLights-acknowledgements.plist"; sourceTree = "<group>"; };
 		D15579FB37DC2880CEFF6E9F4CCFB725 /* FGRoute-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FGRoute-umbrella.h"; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 		D7DED051A7D54CBF302D2926BD9EB905 /* CocoaMQTTDeliver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTDeliver.swift; path = Source/CocoaMQTTDeliver.swift; sourceTree = "<group>"; };
 		DBDFB44070779968F7C2BCAD0DD9D059 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
 		E2E5F9F5DBB1C5D52FA5A04EDE203657 /* CocoaMQTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaMQTT-umbrella.h"; sourceTree = "<group>"; };
-		E6A4E1627379D6540B81A470C575D716 /* libCocoaMQTT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCocoaMQTT.a; path = libCocoaMQTT.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F575F0BD251040F192BA791EC7873718 /* IpHelper.c */ = {isa = PBXFileReference; includeInIndex = 1; name = IpHelper.c; path = FGRoute/Classes/IpHelper.c; sourceTree = "<group>"; };
+		E6A4E1627379D6540B81A470C575D716 /* libCocoaMQTT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaMQTT.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F575F0BD251040F192BA791EC7873718 /* IpHelper.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = IpHelper.c; path = FGRoute/Classes/IpHelper.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +198,6 @@
 				3FC7F9EDCF11FD82791A5292E507ABB9 /* CocoaMQTTTimer.swift */,
 				516AEB9F85C7E1418228AEDBFF8CDC60 /* Support Files */,
 			);
-			name = CocoaMQTT;
 			path = CocoaMQTT;
 			sourceTree = "<group>";
 		};
@@ -240,7 +239,6 @@
 				B961FF1BA488267356A986E09B7DEF89 /* route.h */,
 				8CB060A9B5DCC1C9A2365FB8232B131E /* Support Files */,
 			);
-			name = FGRoute;
 			path = FGRoute;
 			sourceTree = "<group>";
 		};
@@ -282,7 +280,6 @@
 				882DC1140D345352EA8BC37953C34FA7 /* GCDAsyncUdpSocket.m */,
 				36B89C4094CD81780643C27BB7250CBF /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -410,7 +407,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -601,7 +598,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULEMAP_FILE = Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -679,7 +676,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULEMAP_FILE = Headers/Public/CocoaAsyncSocket/CocoaAsyncSocket.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";

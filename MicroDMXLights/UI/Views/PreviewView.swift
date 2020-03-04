@@ -11,11 +11,11 @@ import UIKit
 class PreviewView: UIView {
     
     // MARK: Parameters
-    var RGBColors: [CGFloat] = [0, 0, 0]
+    private(set) var RGBColors: [CGFloat] = [0, 0, 0]
     
     // MARK: Methods
     func update(with color: UIColor, value: Float) {
-        let cgValue = CGFloat(value)
+        let cgValue = CGFloat(value) / 255
         switch color {
         case .red:
             RGBColors[0] = cgValue
@@ -27,7 +27,12 @@ class PreviewView: UIView {
             break
         }
         
-        backgroundColor = UIColor.init(red: RGBColors[0], green: RGBColors[1], blue: RGBColors[2], alpha: 1)
+        backgroundColor = .init(red: RGBColors[0], green: RGBColors[1], blue: RGBColors[2], alpha: 1)
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layer.cornerRadius = bounds.width / 2
     }
     
 }

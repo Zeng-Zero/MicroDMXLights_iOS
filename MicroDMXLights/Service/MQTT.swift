@@ -43,7 +43,7 @@ class MQTT {
         instance.delegate = self
     }
     
-    func connect() -> Bool {
+    @discardableResult func connect() -> Bool {
         instance.connect()
     }
     

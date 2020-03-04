@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,32 +12,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MicroDMXLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Micro DMX Lights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeR-Ah-bsy">
-                                <rect key="frame" x="43.5" y="16" width="288" height="42"/>
+                                <rect key="frame" x="63" y="60" width="288" height="42"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sq-Zq-1FZ" userLabel="Connect" customClass="CustomButton" customModule="MicroDMXLights" customModuleProvider="target">
-                                <rect key="frame" x="16" y="74" width="343" height="40"/>
+                                <rect key="frame" x="16" y="118" width="382" height="40"/>
                                 <state key="normal" title="Connect"/>
                                 <connections>
                                     <action selector="onSwitchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Dq-Ad-wOt"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Op-q8-Fke" userLabel="Preview View" customClass="PreviewView" customModule="MicroDMXLights" customModuleProvider="target">
-                                <rect key="frame" x="162.5" y="124" width="50" height="50"/>
+                                <rect key="frame" x="132" y="168" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8Op-q8-Fke" secondAttribute="height" multiplier="1:1" id="JBy-oh-vLO"/>
-                                    <constraint firstAttribute="height" constant="50" id="XUa-df-vZe"/>
+                                    <constraint firstAttribute="height" constant="150" id="XUa-df-vZe"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="f4i-Tm-KQ9">
-                                <rect key="frame" x="16" y="226.5" width="343" height="214"/>
+                                <rect key="frame" x="16" y="520" width="382" height="214"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-kM-lhp">
                                         <rect key="frame" x="0.0" y="0.0" width="79" height="214"/>
@@ -75,10 +75,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TZy-1n-AKR">
-                                        <rect key="frame" x="118" y="0.0" width="225" height="214"/>
+                                        <rect key="frame" x="133.5" y="0.0" width="248.5" height="214"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="VWY-0b-S5b" userLabel="Red Slider" customClass="RGBSlider" customModule="MicroDMXLights" customModuleProvider="target">
-                                                <rect key="frame" x="-2" y="0.0" width="229" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="252.5" height="31"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="colorValue">
                                                         <integer key="value" value="0"/>
@@ -89,7 +89,7 @@
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="86D-0V-Weu" userLabel="Green Slider" customClass="RGBSlider" customModule="MicroDMXLights" customModuleProvider="target">
-                                                <rect key="frame" x="-2" y="46" width="229" height="31"/>
+                                                <rect key="frame" x="-2" y="46" width="252.5" height="31"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="colorValue">
                                                         <integer key="value" value="1"/>
@@ -100,7 +100,7 @@
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Gql-vF-whg" userLabel="Blue Slider" customClass="RGBSlider" customModule="MicroDMXLights" customModuleProvider="target">
-                                                <rect key="frame" x="-2" y="92" width="229" height="31"/>
+                                                <rect key="frame" x="-2" y="92" width="252.5" height="31"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="colorValue">
                                                         <integer key="value" value="2"/>
@@ -111,17 +111,19 @@
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="S4S-Vh-9Nm" userLabel="Saturation Slider">
-                                                <rect key="frame" x="-2" y="138" width="229" height="31"/>
+                                                <rect key="frame" x="-2" y="138" width="252.5" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="512" translatesAutoresizingMaskIntoConstraints="NO" id="CLx-Qr-xtt" userLabel="Channel Slider">
-                                                <rect key="frame" x="-2" y="184" width="229" height="31"/>
+                                                <rect key="frame" x="-2" y="184" width="252.5" height="31"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </slider>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5R-CQ-KGe" customClass="CustomButton" customModule="MicroDMXLights" customModuleProvider="target">
-                                <rect key="frame" x="167.5" y="583" width="40" height="40"/>
+                                <rect key="frame" x="187" y="778" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ES4-Sd-TcQ"/>
                                 </constraints>
@@ -133,11 +135,11 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-XX-DGk">
-                                <rect key="frame" x="251.5" y="587.5" width="51" height="31"/>
+                                <rect key="frame" x="271" y="782.5" width="51" height="31"/>
                                 <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto send" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqJ-cE-otN">
-                                <rect key="frame" x="237.5" y="622.5" width="77.5" height="20.5"/>
+                                <rect key="frame" x="257" y="817.5" width="77.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -151,9 +153,9 @@
                             <constraint firstItem="eeR-Ah-bsy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Hc7-f1-gPI"/>
                             <constraint firstItem="f4i-Tm-KQ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="I9F-kR-XbY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P5R-CQ-KGe" secondAttribute="bottom" constant="44" id="Ino-hE-ku7"/>
-                            <constraint firstItem="f4i-Tm-KQ9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PBl-N9-y98"/>
                             <constraint firstItem="eeR-Ah-bsy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PoG-jI-PYe"/>
                             <constraint firstItem="MqJ-cE-otN" firstAttribute="top" secondItem="v7c-XX-DGk" secondAttribute="bottom" constant="4" id="SIj-0H-JYY"/>
+                            <constraint firstItem="P5R-CQ-KGe" firstAttribute="top" secondItem="f4i-Tm-KQ9" secondAttribute="bottom" constant="44" id="SoB-3B-ncY"/>
                             <constraint firstItem="TZy-1n-AKR" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.6" id="cdV-BU-GF1"/>
                             <constraint firstItem="8Op-q8-Fke" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dRT-wj-TAz"/>
                             <constraint firstItem="4sq-Zq-1FZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lXm-Ib-TbM"/>
