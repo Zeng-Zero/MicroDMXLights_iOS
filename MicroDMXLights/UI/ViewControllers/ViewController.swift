@@ -16,23 +16,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var previewView: PreviewView!
     @IBOutlet weak var connectButton: CustomButton!
     
-    lazy var service = MQTT.init(id: "iOS-" + String(ProcessInfo().processIdentifier))
+    lazy var mqttService = MQTT.init(id: "iOS-" + String(ProcessInfo().processIdentifier))
+    lazy var messageService = ESPMessageService.init()
+    private var autosend: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        service.delegate = self
-        service.configure(topic: "esp/example/push")
+        mqttService.delegate = self
+        mqttService.configure(topic: "esp/example/push")
     }
     
     @IBAction func onSwitchButtonTapped(_ sender: CustomButton) {
-        if service.isConnected {
-            service.disconnect()
+        if mqttService.isConnected {
+            mqttService.disconnect()
             connectButton.backgroundColor = .white
         } else {
-            service.connect()
+            mqttService.connect()
             connectButton.backgroundColor = UIColor.red.withAlphaComponent(0.2)
         }
+    }
+    
+    @IBAction func autoSendSwitched(_ sender: UISwitch) {
+        autosend = sender.isOn
     }
     
     @IBAction func onSliderChange(_ sender: RGBSlider) {
@@ -41,24 +47,45 @@ class ViewController: UIViewController {
         
         if sender.value != oldValue {
             previewView.update(with: sender.color.color, value: sender.value)
+            if autosend {
+                composeAndSendMessage()
+            }
         }
     }
     
     @IBAction func onSendButtonTapped(_ sender: CustomButton) {
-        service.sendMessage(
-        """
-            {
-              "params": {
-                "r": 255,
-                "g": 2,
-                "b": 0,
-                "s": 10,
-                "t": 1
-              }
-            }
-            """)
+        composeAndSendMessage()
     }
-    // MARK: Helper methods
+    
+    private func composeAndSendMessage() {
+        var red: Int = 0
+        var green: Int = 0
+        var blue: Int = 0
+        let saturation: Int = 100
+        let channel: Int = 1
+        
+        let sliders = slidersStackView.arrangedSubviews.compactMap{ $0 as? RGBSlider }
+        for slider in sliders {
+            switch slider.color {
+            case .red:
+                red = Int(slider.value)
+            case .blue:
+                blue = Int(slider.value)
+            case .green:
+                green = Int(slider.value)
+            }
+        }
+        
+        let params = DMXParams.init(b: blue,
+                                    g: green,
+                                    r: red,
+                                    s: saturation,
+                                    t: channel)
+        messageService.commonMessage = ESPCommonMessage.init(params: params)
+        if let jsonMessage = messageService.commonMessage?.composeToJSON() {
+            mqttService.sendMessage(jsonMessage)
+        }
+    }
     
 }
 

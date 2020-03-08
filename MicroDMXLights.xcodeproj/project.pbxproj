@@ -15,6 +15,9 @@
 		95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CC9240847F800B3EEDF /* CustomButton.swift */; };
 		95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCB2408480D00B3EEDF /* ViewController.swift */; };
 		95565CCE2408481100B3EEDF /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95565CCD2408481100B3EEDF /* MQTT.swift */; };
+		95686AE62415576900076C9F /* DMXParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95686AE52415576900076C9F /* DMXParams.swift */; };
+		95686AE8241557AC00076C9F /* ESPCommonMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95686AE7241557AC00076C9F /* ESPCommonMessage.swift */; };
+		95686AEC241559D500076C9F /* ESPMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95686AEB241559D500076C9F /* ESPMessageService.swift */; };
 		95B809A9240AA84300BD4006 /* RGBSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809A8240AA84300BD4006 /* RGBSlider.swift */; };
 		95B809AB240AAAAE00BD4006 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B809AA240AAAAE00BD4006 /* PreviewView.swift */; };
 		95E6B3D4240AB413002EF674 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */; };
@@ -38,6 +41,9 @@
 		95565CD62408F80300B3EEDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		95565CDA2408F80600B3EEDF /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		95565CDD2408F81300B3EEDF /* CocoaMQTT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaMQTT.framework; path = Carthage/Build/iOS/CocoaMQTT.framework; sourceTree = "<group>"; };
+		95686AE52415576900076C9F /* DMXParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMXParams.swift; sourceTree = "<group>"; };
+		95686AE7241557AC00076C9F /* ESPCommonMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESPCommonMessage.swift; sourceTree = "<group>"; };
+		95686AEB241559D500076C9F /* ESPMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESPMessageService.swift; sourceTree = "<group>"; };
 		95B809A8240AA84300BD4006 /* RGBSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSlider.swift; sourceTree = "<group>"; };
 		95B809AA240AAAAE00BD4006 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		95E6B3D3240AB413002EF674 /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 		95B8099C240AA1D000BD4006 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				95686AE52415576900076C9F /* DMXParams.swift */,
+				95686AE7241557AC00076C9F /* ESPCommonMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				95565CCD2408481100B3EEDF /* MQTT.swift */,
+				95686AEB241559D500076C9F /* ESPMessageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -292,10 +301,13 @@
 				95B809A9240AA84300BD4006 /* RGBSlider.swift in Sources */,
 				95565CCA240847F800B3EEDF /* CustomButton.swift in Sources */,
 				95B809AB240AAAAE00BD4006 /* PreviewView.swift in Sources */,
+				95686AE8241557AC00076C9F /* ESPCommonMessage.swift in Sources */,
+				95686AEC241559D500076C9F /* ESPMessageService.swift in Sources */,
 				95565CB62408478500B3EEDF /* AppDelegate.swift in Sources */,
 				95565CCC2408480D00B3EEDF /* ViewController.swift in Sources */,
 				95565CCE2408481100B3EEDF /* MQTT.swift in Sources */,
 				95565CB82408478500B3EEDF /* SceneDelegate.swift in Sources */,
+				95686AE62415576900076C9F /* DMXParams.swift in Sources */,
 				95E6B3D4240AB413002EF674 /* UIColor+RGB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
